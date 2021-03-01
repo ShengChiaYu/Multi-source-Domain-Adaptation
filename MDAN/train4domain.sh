@@ -1,0 +1,4 @@
+python3 train.py --batch_size 8 --root '../../DLCVFinal/dataset_public' --num_epochs 5  --num_workers 8 --model_path 'light_model/' --lr 0.0001 --mu 0.3 --target_domain 2 --pretrained_model_path 'pretrain/src_combine_tar_real.pth'
+python3 train.py --batch_size 8 --root '../../DLCVFinal/dataset_public' --num_epochs 5  --num_workers 8 --model_path 'light_model/' --lr 0.0001 --mu 0.3 --target_domain 0 --pretrained_model_path 'pretrain/src_combine_tar_infograph.pth'
+python3 train.py --batch_size 8 --root '../../DLCVFinal/dataset_public' --num_epochs 5  --num_workers 8 --model_path 'light_model/' --lr 0.0001 --mu 0.3 --target_domain 1 --pretrained_model_path 'pretrain/src_combine_tar_quickdraw.pth'
+python3 train.py --batch_size 8 --root '../../DLCVFinal/dataset_public' --num_epochs 5  --num_workers 8 --model_path 'light_model/' --lr 0.0001 --mu 0.3 --target_domain 3 --pretrained_model_path 'pretrain/src_combine_tar_sketch.pth'
