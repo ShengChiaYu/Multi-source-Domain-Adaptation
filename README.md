@@ -1,14 +1,13 @@
-# Final Project
+# Multi-source-Domain-Adaptation
 
-## Experimental Results
-- M3SDA on the testing dataset.
-
-|  Target domains  |   skt   |   qdr   |   inf   |   rel   |
-| :--------------: | :-----: | :-----: | :-----: | :-----: |
-|      M3SDA       | 48.545% | 16.609% | 24.451% | 57.690% |
-
-The column-wise domains are selected as the target domain.
-(inf: infograph, qdr: quickdraw, skt: sketch, rel: real)
+## Task
+A more practical scenario where training data are collected from multiple sources. For this challenge, we use the DomainNet dataset. We consider 3 source domains and 1 target domain, where each domain consists of 345 image classes. We will perform all 4 adaptations below. 
+|   #   | Source Domains  | Target Domain |
+| :---: | :-------------: | :-----------: |
+|   1   | inf + qdr + rel |      skt      |
+|   2   | inf +rel + skt  |      qdr      |
+|   3   | qdr + rel + skt |      inf      |
+|   4   | inf + qdr + skt |      rel      |
 
 ## Usage Format
 Please run our code in the following manner:
